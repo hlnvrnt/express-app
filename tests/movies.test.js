@@ -32,4 +32,17 @@ describe("GET /api/movies/:id", () => {
     );
   });
 
+  
+describe("GET /api/movies/:id", () => {
+
+    it("should return movies id", async () => {
+      const responseid = await request(app).get("/api/movies/0");
+  
+      
+      expect(responseid.status).toEqual(404);
+      console.log(responseid)
+    } 
+    );
+  });
+
 
